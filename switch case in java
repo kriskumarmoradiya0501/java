@@ -1,0 +1,24 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Switch_case {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter number : ");
+        byte num = s.nextByte();
+        switch (num){
+            case 1 :
+                System.out.println("Number 1 is entered.");
+                break;
+            case 2:
+                System.out.println("Number 2 is entered.");
+                break;
+            default:
+                System.out.println("Invalid number.");
+                break;
+        }
+
+
+    }
+}
