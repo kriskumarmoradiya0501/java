@@ -1,0 +1,32 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class SubjectPerCounter {
+    public static void main(String[] args) {
+        Scanner s1=new Scanner(System.in);
+        Float guj = s1.nextFloat();
+        Float eng = s1.nextFloat();
+        Float sk = s1.nextFloat();
+        Float sci = s1.nextFloat();
+        Float maths=s1.nextFloat();
+
+        System.out.println("english");
+        System.out.println(eng);
+
+        System.out.println("Gujarati");
+        System.out.println(guj);
+
+        System.out.println("Sanskrit");
+        System.out.println(sk);
+
+        System.out.println("Science");
+        System.out.println(sci);
+
+        System.out.println("Mathematics");
+        System.out.println(maths);
+
+        System.out.println("Per = ");
+        System.out.println((eng+guj+maths+sci+sk)/5);
+    }
+}
