@@ -1,0 +1,143 @@
+package com.company;
+
+import java.util.Scanner;
+
+
+public class Practice_set_4 {
+    public static void main(String[] args) {
+//        Q1 what will be the output of this program.
+        /*
+            int a =10;
+            if(a==11)
+                Sout("I am 11.);
+            else
+                sout("I am not 11);
+
+            Answer : I am not 11.
+         */
+
+        int a = 10;
+        if (a==11){
+            System.out.println("I am 11.");
+        }
+        else {
+            System.out.println("I am not 11.");
+        }
+
+//        Q2 write a program to find out whether a student is pass or fail; if it requires total 40% and at least 33% in each subject to pass.
+//          Assume at least 3 subject and take marks as an input from the user.
+
+        Scanner s = new Scanner(System.in);
+
+        System.out.println("Enter marks of Gujarati.");
+        Float guj = s.nextFloat();
+        System.out.println("Enter marks of English.");
+        Float eng = s.nextFloat();
+        System.out.println("Enter marks of maths.");
+        Float maths = s.nextFloat();
+
+        if (eng>33&&guj>33&&maths>33){
+            Float per = (eng+guj+maths)/3;
+            if (per>44){
+                System.out.println("You are pass.");
+            }
+            else {
+                System.out.println("You are fail.");
+            }
+        }
+        else {
+            System.out.println("You are fail.");
+        }
+
+//        Q3 calculate income for paid by an employee to the gov. as per the slots mentioned below:
+        /*
+            Income      tax
+            2.5l-5.0l   5%
+            5.0l-10.0l  20%
+            above 10.0l 30%
+
+            note that there is no tax below 2.5l take input amount as an input from the user.
+         */
+
+        System.out.println("Enter your salary : ");
+        Float sal = s.nextFloat();
+
+        if (sal > 250000 && sal<500000){
+            float tax = (sal*5)/100;
+            System.out.println("Your payable income tax = "+tax);
+        } else if (sal>500000 && sal<1000000 ) {
+            float tax = (sal*20)/100;
+            System.out.println("Your payable income tax = "+tax);
+        } else if (sal>1000000) {
+            float tax = (sal*30)/100;
+            System.out.println("Your payable income tax= "+tax);
+        }
+        else {
+            System.out.println("You have not to pay income tax because your salary is below 2.5l.");
+        }
+
+//        Q4 write a java program to find out the day of the week given the number [1 for monday,2 for tuesday... and so on!]
+
+        System.out.println("Enter day number : ");
+        byte day = s.nextByte();
+
+        switch (day){
+            case 1:
+                System.out.println("Monday");
+                break;
+            case 2:
+                System.out.println("Tuesday");
+                break;
+            case 3:
+                System.out.println("Wednesday");
+                break;
+            case 4:
+                System.out.println("Thursday");
+                break;
+            case 5:
+                System.out.println("Friday");
+                break;
+            case 6:
+                System.out.println("Saturday");
+                break;
+            case 7:
+                System.out.println("Sunday");
+                break;
+            default:
+                System.out.println("Invalid Input");
+                break;
+        }
+
+//      Q5 Write a java program to find whether a year entered by the user is a leap year or not.
+
+        System.out.println("Enter Year : ");
+        int year = s.nextInt();
+        System.out.println(year);
+        if (year % 4 == 0){
+            System.out.println("Yes, "+year+" is the leap year.");
+        }
+        else {
+            System.out.println("No, "+year+" is not leap year.");
+        }
+
+//        Q6 write a program to find out the type of website from the url :
+        /*
+            .com -> commercial website.
+            .org -> organisation website.
+            .in -> indian website.
+         */
+
+        System.out.println("Enter your web url : ");
+        String url = s.next();
+
+        if (url.endsWith(".com")){
+            System.out.println("This is Commercial Website");
+        } else if (url.endsWith(".org")) {
+            System.out.println("This is organisation website.");
+        } else if (url.endsWith(".in")) {
+            System.out.println("This is indian website");
+        }else {
+            System.out.println("Invalid input");
+        }
+    }
+}
