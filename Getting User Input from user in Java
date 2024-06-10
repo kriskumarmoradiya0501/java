@@ -1,0 +1,26 @@
+package com.company;
+import java.util.Scanner;
+public class GettingUserInputinJava {
+    public static void main(String[] args) {
+        System.out.println("it works");
+        Scanner s = new Scanner(System.in);
+        System.out.println("ENter nombers");
+        int a = s.nextInt();
+        int b = s.nextInt();
+        int sum = a+b;
+        System.out.println(sum);
+        float c = s.nextFloat();
+        float d = s.nextFloat();
+        System.out.println(c+d);
+
+        String str = s.nextLine();
+        System.out.println(str);
+//        read full string at one time.
+        String str1=s.next();
+        System.out.println(str1);
+//        read only on word from entered string.
+
+        boolean x = s.hasNextInt(a);
+        System.out.println(x);
+    }
+}
