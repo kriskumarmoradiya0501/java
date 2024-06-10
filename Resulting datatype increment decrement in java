@@ -1,0 +1,36 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Resulting_datatype_incre_decre {
+    public static void main(String[] args) {
+        int i = 54;
+//        increment operator.
+
+        System.out.println(i);
+
+        System.out.println(i++);
+//        first it print the value as it is after then it increase value
+
+        System.out.println(i);
+
+        System.out.println(++i);
+//        first it increase the value after than it print the values.
+
+        System.out.println(i);
+
+//        decrement operator.
+        int b = 80;
+        System.out.println(b);
+
+        System.out.println(b--);
+//      first it print the value as it is after than it decrease the value.
+
+        System.out.println(b);
+
+        System.out.println(--b);
+//      first it decrease the value after than it print the value.
+
+        System.out.println(b);
+    }
+}
