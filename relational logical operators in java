@@ -1,0 +1,22 @@
+package com.company;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+
+public class relational_logical_operators {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter Your age : ");
+        byte age = s.nextByte();
+        System.out.println("Enter your Gender : ");
+        char gen = s.next().charAt(0);
+
+        if (age>18 && gen=='m'){
+            System.out.println("You can enter");
+        }
+        else {
+            System.out.println("You can't enter");
+        }
+    }
+}
