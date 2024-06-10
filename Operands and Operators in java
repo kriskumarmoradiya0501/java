@@ -1,0 +1,49 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class OperendsandOperators {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter no 1 = ");
+        Float num1 = s.nextFloat();
+        System.out.println("Enter no 2 = ");
+        Float num2 = s.nextFloat();
+//  Arithmetic operators.
+
+//        addition
+        Float add = (num1+num2);
+        System.out.println("Addition of two number is "+add);
+
+//        subtraction
+        Float sub = (num1-num2);
+        System.out.println("subtraction of two number is "+sub);
+
+//        multiplication
+        Float mul = (num1*num2);
+        System.out.println("multiplication of two number is "+mul);
+
+//        division
+        Float div = (num1/num2);
+        System.out.println("division of two number is "+div);
+
+//        modulo
+        Float mod = (num1%num2);
+        System.out.println("modulo of two number is "+mod);
+
+
+//  comparison operators
+
+        System.out.println(num1+" > "+num2+" = "+(num1>num2));
+        System.out.println(num1+" < "+num2+" = "+(num1<num2));
+
+//  logical operators
+
+        System.out.println(num1+" > "+num2+" || "+num1+" < "+num2+" = "+(num1>num2 || num1<num2));
+        System.out.println(num1+" > "+num2+" || "+num1+" < "+num2+" = "+(num1>num2 && num1<num2));
+
+//  bitwise operators
+
+        System.out.println(2&3);
+    }
+}
