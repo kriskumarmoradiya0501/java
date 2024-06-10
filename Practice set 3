@@ -1,0 +1,43 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Practice_set_3 {
+    public static void main(String[] args) {
+
+//        Q1 write a java program to convert a string to lower case.
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter string to convert in  lower case: ");
+        String str = s.nextLine();
+        System.out.println(str.toLowerCase());
+
+//      Q2 Write a java program to replace spaces with underscores.
+
+        System.out.println("Enter string to remove underscores : ");
+        String str1 = s.nextLine();
+        System.out.println(str1.replace(" ","_"));
+
+//        Q3 write a java program to fill in a letter template which looks like below :
+        /*
+        Letter = " dear <|name|>, Trans a lot "
+        replace <|name|> with a string (some name).
+         */
+        System.out.println("Enter name : ");
+        String letter = "Dear <|name|>, Thanks a lot!";
+        String replace = s.next();
+        System.out.println(letter.replace("<|name|>",replace));
+
+//        Q4 write a java program to detect double and triple spaces in a string.
+
+        String str3 = "this  is my   house.";
+        System.out.println(str3.indexOf("  "));
+        System.out.println(str3.indexOf("   "));
+
+//        Q5 write a program to format the following letter using escape sequence characters.
+        /*
+            letter = " Dear Krish, this java course is nice thank .
+         */
+        String letter2 = "Dear Krish,\n\tthis java course is nice.\n\tthanks! ";
+        System.out.println(letter2);
+    }
+}
