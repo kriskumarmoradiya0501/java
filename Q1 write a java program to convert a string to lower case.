@@ -1,0 +1,17 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Practice_set_3 {
+    public static void main(String[] args) {
+
+//        Q1 write a java program to convert a string to lower case.
+        Scanner s = new Scanner(System.in);
+        
+        System.out.println("Enter string to convert in  lower case: ");
+        String str = s.nextLine();
+        
+        System.out.println(str.toLowerCase());
+
+    }
+}
