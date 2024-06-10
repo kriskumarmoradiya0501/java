@@ -1,0 +1,26 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Introduction_strings {
+    public static void main(String[] args) {
+         String str = "Jay Shree Ram";
+         String str1 = new String("krish");
+        System.out.println(str);
+
+        Scanner s = new Scanner(System.in);
+
+        String str3 = s.next();
+        System.out.println(str3);
+
+        String str2 = s.nextLine();
+        System.out.println(str2);
+
+        System.out.println("my name is");
+        System.out.print("krish");
+        System.out.printf("krish");
+        int a = 10;
+        Float b= 20.0f;
+        System.out.printf("integer %d and float %f ",a,b);
+    }
+}
