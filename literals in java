@@ -1,0 +1,20 @@
+package com.company;
+
+public class literals {
+    public static void main(String[] args) {
+        byte age = 34;
+//        initialize the variable value.
+         int age2 = 129;
+         char ch = 'a';
+         float f1 = 5.6f;
+         double d1 = 4.66d;
+         String str="ABCD1234";
+        System.out.println(age);
+        System.out.println(age2);
+        System.out.println(ch);
+        System.out.println(f1);
+        System.out.println(d1);
+        System.out.println(str);
+
+    }
+}
