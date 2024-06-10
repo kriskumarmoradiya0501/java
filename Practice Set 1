@@ -1,0 +1,51 @@
+package com.companty;
+
+import java.util.Scanner;
+
+public class PrecticeSet1 {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+
+//      Q1  Write a Program to sum three numbers in java.
+
+        System.out.println("Enter three number");
+        int num1 = s.nextInt();
+        int num2 = s.nextInt();
+        int num3 = s.nextInt();
+        int sum = num1 + num2 + num3;
+        System.out.println(sum);
+
+//      Q2 Write a program to calculate CGPA using marks of three subject (out of 100).
+
+        System.out.println("Enter marks of eng = ");
+        float eng = s.nextFloat();
+        System.out.println("Enter marks of sci = ");
+        float sci = s.nextFloat();
+        System.out.println("Enter marks of maths = ");
+        float maths = s.nextFloat();
+
+        System.out.println("per = ");
+        System.out.println((eng+sci+maths)/3);
+        System.out.println("CGPA = ");
+        System.out.println(((eng+sci+maths)/3)/10);
+
+//        Q3 write a java program which asks the user to enter his/her name and greets them with "hello <name>, have a good day" text.
+
+        System.out.println("What is your name?");
+        String name = s.next();
+        System.out.println("Hello "+name+", have a good day");
+
+//        Q4 write a jva program to convert kilometers to miles.
+
+        System.out.println("Enter Kilometers = ");
+        float km = s.nextFloat();
+        System.out.println(km+"Kilometers = "+km/1.609344+"Miles");
+
+//        Q5 write a java program to detect whether a number entered by the user is integer or not.
+
+        System.out.println("Enter number");
+        boolean check = s.hasNextInt();
+        System.out.println("Given values is Integer or not ?"+ check);
+    }
+
+}
