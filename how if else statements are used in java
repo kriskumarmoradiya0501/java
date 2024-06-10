@@ -1,0 +1,20 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class if_else_statement {
+    public static void main(String[] args) {
+
+        System.out.println("Enter your age : ");
+        Scanner s = new Scanner(System.in);
+
+        byte age= s.nextByte();
+        
+        if (age>18){
+            System.out.println("You can drive!");
+        }
+        else {
+            System.out.println("You can't drive!");
+        }
+    }
+}
