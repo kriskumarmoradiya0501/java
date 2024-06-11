@@ -1,0 +1,53 @@
+package com.company;
+
+import java.util.Random;
+
+import java.util.Scanner;
+
+public class Rock_Paper_Scissors_Game {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        Random random = new Random();
+
+        String[] choices = {"stone", "paper", "scissors"};
+
+        int a=0;
+        int user_p=0;
+        int com_p=0;
+
+        while (a<5) {
+
+            System.out.println("Welcome to Stone-Paper-Scissors game!");
+            System.out.println("Enter your choice: stone, paper, or scissors");
+
+            System.out.print("Your choice: ");
+            String user = scanner.next();
+
+
+            int computerIndex = random.nextInt(3);
+            String computer = choices[computerIndex];
+
+            System.out.println("Computer's choice: " + computer);
+
+            if (!user.equals("stone") && !user.equals("paper") && !user.equals("scissors")) {
+                System.out.println("Invalid choice.");
+            }
+            else if (user.equals(computer)) {
+                System.out.println("Tie!");
+            }
+            else if ((user.equals("stone") && computer.equals("scissors")) ||
+                    (user.equals("paper") && computer.equals("stone")) ||
+                    (user.equals("scissors") && computer.equals("paper"))) {
+                System.out.println("Congratulations! You win!");
+                user_p++;
+            }
+            else {
+                System.out.println("Computer wins!");
+                com_p++;
+            }
+            a++;
+        }
+        System.out.println("Result : \n computer = "+com_p+" user = "+user_p);
+    }
+}
