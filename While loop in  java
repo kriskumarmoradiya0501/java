@@ -1,0 +1,19 @@
+package com.companu;
+
+public class While_loop {
+    public static void main(String[] args) {
+
+//        While loop checks condition at starting time of loop.
+//        it works until the condition become true.
+//        we can use boolean values too for use while loop.
+
+        int a = 0;
+
+        while (a < 5 ){
+//            while ( condition  )
+            System.out.println(a);
+            a++;
+//            increment operator.
+        }
+    }
+}
