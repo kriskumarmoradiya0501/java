@@ -1,0 +1,28 @@
+package com.company;
+
+public class For_loop {
+    public static void main(String[] args) {
+
+//        incremental for loop
+
+        for (int i=0;i<5;i++){
+             System.out.println(i);
+         }
+
+//         Odd number print.
+
+         int num = 10;
+
+         for (int i = 0;i<num;i++){
+             if (i%2!=0){
+                 System.out.println(i);
+             }
+         }
+
+//         decremental for loop
+
+         for (int i=10;i>0;i--){
+             System.out.println(i);
+         }
+    }
+}
