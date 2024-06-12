@@ -1,0 +1,39 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Introduction_Arrays {
+    public static void main(String[] args) {
+
+//        Array : arrays are the functionality where we can store multiple values of same datatype under on name according to index.
+
+//        here we have 3 ways to create an arrays.
+
+//        Type : 1 declare and memory allocation.
+
+        int [] marks = new int[5];
+//        declare and memory allocation
+        marks [0] = 25;
+        marks [1] = 26;
+//        initialize an array
+        System.out.println(marks[0]);
+//      print an array.
+
+//        Type 2 : declare and then memory allocation.
+
+        int [] marks1;
+//        declare an array.
+        marks1 = new int[5];
+//        memory allocation of array.
+        marks1[0]=23;
+        marks1[1]=24;
+//        initialize an array.
+        System.out.println(marks1[0]);
+
+//        Type 3 : declare, memory allocation and initialization at once.
+
+        int [] marks2 = {28,29,30};
+//        declare,memory allocation and initialization.
+        System.out.println(marks2[2]);
+    }
+}
