@@ -1,0 +1,102 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Practice_set_5 {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+
+//        Q1 write a program to print the following pattern
+
+        for (int i = 0 ; i < 4 ; i++){
+            for (int j=4;j>i ; j--){
+                System.out.print("*");
+            }
+            System.out.println(" ");
+        }
+
+//        Q2 write a program to sum first n even numbers using while loop.
+
+        int sum = 0;
+
+        System.out.println("Enter number : ");
+        int num = s.nextInt();
+        int i = 1;
+
+        while (i <= num) {
+            if (i % 2 != 0) {
+                sum+=i;
+            }
+            i++;
+        }
+        System.out.println(sum);
+
+//        Q3 write a program to print multiplication table od ==f given number n.
+
+        System.out.println("Enter the number of table : ");
+        int table = s.nextInt();
+
+        for (int j=1;j<=10;j++){
+            System.out.println(table+" * "+j+" = "+(table*j));
+        }
+
+//        Q4 write a program to print multiplication table of 10 i  reverse order.
+        for (int j = 10; j>=1;j--){
+            int reverse10 = 10;
+            System.out.println(reverse10+" * "+j+" = "+(reverse10*j));
+        }
+
+//        Q5 write a program to find factorial of a given number using for loops.
+
+        System.out.println("Enter number which you want to find factorial : ");
+
+        float fac = s.nextFloat();
+        Float fact = 1.0f;
+        for (int j=1;j<=fac;j++){
+            fact *=j;
+        }
+        System.out.println(fac+" factorial is "+fact);
+
+//      Q6 repeat 5 using while loop.
+
+
+        System.out.println("Enter number which you want to find factorial : ");
+
+        float fac1 = s.nextFloat();
+        Float fact1 = 1.0f;
+        int j=1;
+        while (j<=fac1){
+            fact1 *=j;
+            j++;
+        }
+        System.out.println(fac1+" factorial is "+fact1);
+
+//        Q7 repeat 1 using for/while loop.
+        int k=0;
+        int l=4;
+        while (k < 4){
+            for (l=4;l>k ; l--){
+                System.out.print("*");
+            }
+            System.out.println(" ");
+            k++;
+        }
+
+//        Q8 what can be done using one type of loop can also be done using the other two types of loops - true or false.
+//        answer : true.
+
+//        Q9 write a program to calculate the sum of the numbers occur in the multiplication table of 8.
+
+        int total = 0;
+        for (int m = 10; m>=1;m--){
+            int reverse8 = 8;
+            System.out.print(reverse8+" * "+m+" = ");
+            int mul = (reverse8*m);
+            total+=mul;
+            System.out.print(mul+"\n");
+        }
+        System.out.println(total);
+
+
+    }
+}
