@@ -1,0 +1,19 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class do_while_loop {
+    public static void main(String[] args) {
+
+//        it is use when you want to execute the loop atlas one time whether the condition is true or not.
+//        the condition is checks after the loop execution.
+
+        int b=0;
+
+        do{
+            System.out.println(b);
+            b++;
+        }while (b<5);
+
+    }
+}
