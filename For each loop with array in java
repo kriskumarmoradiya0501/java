@@ -1,0 +1,26 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class For_each_loop {
+    public static void main(String[] args) {
+        int [] marks = {0,1,2,3,4};
+        System.out.println(marks[0]);
+
+        System.out.println(marks.length);
+//        It shows the total number of length of array.
+        float [] marks1 = {89.06f,45.54f,55.0f,45840.f};
+        System.out.println(marks1[3]);
+//        we can use float,int,byte,char,string and many more data type as array.
+
+        for (int i=0;i<4;i++){
+            System.out.println(marks1[i]);
+        }
+
+//      for-each loop.
+        for (int element : marks){
+            System.out.println(element);
+        }
+
+    }
+}
