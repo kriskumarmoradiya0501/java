@@ -1,0 +1,116 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Practice_set_6 {
+    public static void main(String[] args) {
+
+        Scanner s = new Scanner(System.in);
+
+//      Q1 create an array of 5 floats and calculate their sum.
+
+        float[] numbers = {25.04f,44.02f,26.254f,245.21f,3525.4f};
+
+        for (int i = 0;i<numbers.length;i++){
+            System.out.printf("%f \n",numbers[i]);
+        }
+        float sum=0;
+        for (int i = 0; i <numbers.length;i++){
+            sum+=numbers[i];
+        }
+        System.out.println("Sum of above number is "+sum);
+
+//        Q2 write a program to find out whether a given integer is present in an array or not.
+
+        int [] number1 = {1,2,3,4,5,6,7,8,9,10};
+
+        System.out.print("Enter number to find whether the number is present or not : ");
+        int number2;
+        int j=0;
+        number2 = s.nextInt();
+        for (int element : number1){
+            if (number2 == element) {
+                j++;
+                break;
+            }
+        }
+        if (j==1){
+            System.out.println("Yes this number is present!!");
+        }else {
+            System.out.println("No this number is not present!");
+        }
+
+//        Q3 calculate the average marks from an array containing marks of all students in physics using for-each loop.
+
+        float [] marks1={52.0f,62.0f,75.5f,98.5f,65.0f};
+        float sum1=0;
+        for (float element : marks1){
+            sum1+=element;
+        }
+        System.out.println("Average of physics marks is "+sum1/marks1.length);
+
+//        Q4 create a java program to add two matrices of 2*3.
+
+
+        int[][] mat1 = {{12, 23, 36}, {65, 54, 47}};
+        int[][] mat2 = {{78, 89, 98}, {87, 74, 45}};
+        int[][] result = {{0, 0, 0}, {0, 0, 0}};
+
+        for (int i = 0; i < mat1.length; i++) { // iterate through rows
+            for (int k = 0; k < mat1[i].length; k++) { // iterate through columns
+                result[i][k] = mat1[i][k] + mat2[i][k]; // sum corresponding elements
+                System.out.print(result[i][k] + " "); // print the updated result element
+            }
+            System.out.println(); // move to the next line after each row
+        }
+
+//        Q5 Write a java program to reverse an array.
+
+        int [] numbers1 ={1,2,3,4,5,6,7};
+
+        for (int i = numbers1.length-1;i>=0;i--){
+            System.out.println(numbers1[i]);
+        }
+
+//        Q6 write a java program to find the maximum element in an array.
+
+        int [] arr = {10,25,6,53,58,5,24,56};
+        int temp=arr[0];
+        for (int i = 0;i<arr.length;i++){
+            if (temp<=arr[i]){
+                temp=arr[i];
+            }
+        }
+        System.out.println("the max number of arr is "+temp);
+
+//        Q7 write a java program to find the maximum element in a java array.
+
+        int [] arr1 = {10,25,6,53,58,5,24,56};
+        int temp1=arr1[0];
+        for (int i = 0;i<arr1.length;i++){
+            if (temp1>=arr1[i]){
+                temp1=arr1[i];
+            }
+        }
+        System.out.println("the min number of arr is "+temp1);
+
+//        Q8 write a java program to find whether an array is sorted or not.
+
+        int [] arr2 = {1,2,3,4,5,9,7,8};
+        boolean b = false;
+        for (int i = 1;i<arr2.length;i++){
+            if (arr2[i-1]>arr2[i]){
+                b = true;
+                break;
+            }
+        }
+
+        if (b){
+            System.out.println("not sorted.");
+        }
+        else {
+            System.out.println("sorted.");
+        }
+        
+    }
+}
