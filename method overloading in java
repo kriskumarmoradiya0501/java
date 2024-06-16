@@ -1,0 +1,40 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class method_overloading {
+    static void jock(){
+        System.out.println("Joke");
+    }
+    static void look(){
+        System.out.println("this is look method.");
+    }
+    static void look(int x){
+        System.out.println("entered number is "+x);
+    }
+    static void look(int x,int y){
+        System.out.println("sum of "+x+" + "+y+" = "+(x+y));
+    }
+    public static void main(String[] args) {
+
+        Scanner s = new Scanner(System.in);
+
+        jock();
+        look();
+
+        System.out.print("Enter number = ");
+        int a = s.nextInt();
+        look(a);
+
+        System.out.println("Enter numbers for sum.");
+        System.out.print("number1 = ");
+        int b = s.nextInt();
+        System.out.println(" ");
+        System.out.print("number2 = ");
+        int c =s.nextInt();
+        System.out.println(" ");
+
+        look(c,b);
+
+    }
+}
