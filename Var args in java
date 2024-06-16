@@ -1,0 +1,17 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class varargs_in_java {
+    static int sum(int x,int ...arr){
+        int result=x;
+        for (int a : arr){
+            result+=a;
+        }
+        return result;
+    }
+    public static void main(String[] args) {
+        System.out.println(sum(1));
+        System.out.println("the sum of 5,6,7,8,9,5,2,5,2,1,52,5,456,4,46,6,56,4,64,5,45,4,6 = "+sum(5,6,7,8,9,5,2,5,2,1,52,5,456,4,46,6,56,4,64,5,45,4,6));
+    }
+}
