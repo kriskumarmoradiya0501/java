@@ -1,0 +1,22 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class recursion_in_java {
+    static int fac(int n){
+        if(n==0 || n==1){
+            return 1;
+        }
+        else {
+            return n*fac(n-1);
+        }
+    }
+    public static void main(String[] args) {
+
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter number which you want to find factorial = ");
+        int a = s.nextInt();
+
+        System.out.println("factorial of "+a+" is "+fac(a));
+    }
+}
