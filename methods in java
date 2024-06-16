@@ -1,0 +1,41 @@
+package com.company;
+
+import javax.swing.plaf.IconUIResource;
+import java.util.Scanner;
+
+public class methods_in_java {
+    static int min_max(int x,int y){
+        int z = 0;
+        if(x>y){
+            z=1;
+        }
+        return z;
+    }
+    int log(int x,int y){
+        int z;
+        if (x>y){
+            z=x+y;
+        }
+        else {
+            z=x*y;
+        }
+        return z;
+    }
+    public static void main(String[] args) {
+        Scanner s =new Scanner(System.in);
+        int a = s.nextInt();
+        int b = s.nextInt();
+        int c = min_max(a,b);
+        if (c!=1){
+            System.out.println("a is small");
+        }
+        else {
+            System.out.println("a is big");
+        }
+
+        methods_in_java obj = new methods_in_java();
+        c=obj.log(a,b);
+        System.out.println(c);
+        
+    }
+}
