@@ -1,0 +1,95 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Practice_set_7 {
+
+    static void table(int n) {
+        System.out.println("Table of " + n + " is :");
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(n + " * " + i + " = " + (i * n));
+        }
+    }
+
+    static void pattern() {
+        System.out.println("Given Pattern : ");
+        for (int i = 1; i <= 4; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(" * ");
+            }
+            System.out.println(" ");
+        }
+    }
+
+    static int natural_num(int n) {
+        if (n == 1) {
+            return 1;
+        }
+        return n + natural_num(n - 1);
+    }
+
+    static void pattern2() {
+        System.out.println("Here is given pattern : ");
+        for (int i = 0; i < 4; i++) {
+            for (int j = 0; j < 4 - i; j++) {
+                System.out.print(" * ");
+            }
+            System.out.println(" ");
+        }
+    }
+
+    static int fibonacci(int n) {
+        if (n <= 1) {
+            return n;
+        } else {
+            return fibonacci(n - 1) + fibonacci(n - 2);
+        }
+    }
+
+    static double sum(double x, double... arr) {
+        double result = x;
+        for (double a : arr) {
+            result += a;
+        }
+        result=result/arr.length;
+        return result;
+    }
+
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+
+        // Q1 write a java method to print multiplication table of a number n.
+        System.out.print("Enter the number for which you want to print table: ");
+        int n = s.nextInt();
+        table(n);
+
+        // Q2 write a program using function to print the following pattern:
+        /*
+         *
+         * *
+         * * *
+         * * * *
+         */
+        pattern();
+
+        // Q3 write a recursive function to calculate sum of first n natural numbers.
+        System.out.print("Enter natural number till what you want to print sum: ");
+        int number1 = s.nextInt();
+        System.out.println("Sum till " + number1 + " is " + natural_num(number1));
+
+        // Q4 write a function to print the following pattern.
+        pattern2();
+
+        // Q5 write a function to print nth term of Fibonacci series using recursion.
+        System.out.print("Enter number until which you want to perform Fibonacci series: ");
+        int fnum = s.nextInt();
+        System.out.println("The " + fnum + "th term of the Fibonacci series is: " + fibonacci(fnum));
+
+        // Q6 write a function to find the sum of a set of numbers passed as argument.
+        System.out.println("Sum of numbers passed: " + sum(1));
+        System.out.println("avarage of numbers passed 5, 6, 7, 8, 9, 5, 2, 5, 2, 1, 52, 5, 456, 4, 46, 6, 56, 4, 64, 5, 45, 4, 6: " + sum(5, 6, 7, 8, 9, 5, 2, 5, 2, 1, 52, 5, 456, 4, 46, 6, 56, 4, 64, 5, 45, 4, 6));
+
+        s.close();
+        
+    }
+}
