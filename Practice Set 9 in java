@@ -1,0 +1,102 @@
+public class PracticeSet9 {
+
+    static class Employee1{
+        int salary;
+        String name;
+        public int getSalary(){
+            return salary;
+        }
+        public String getName(){
+            return name;
+        }
+        public void setName(String n){
+            name=n;
+        }
+    }
+
+    static class cellphone{
+        public void ringing(){
+            System.out.println("Ring mode on.");
+        }
+        public void Vibrate() {
+            System.out.println("Vibrate mode on.");
+        }
+    }
+
+    static class square{
+        double side;
+        double area;
+        public void SetSides(double side1){
+            side=side1;
+        }
+        public double area(){
+            return area=side*side;
+        }
+    }
+
+    static class TommyVecetti{
+        public void hitting(){
+            System.out.println("Hitting");
+        }
+        public void running(){
+            System.out.println("Running");
+        }
+    }
+
+    static class Rectangle{
+        double length;
+        double width;
+        double area;
+        public void getSides(double length1,double width1){
+            length=length1;
+            width=width1;
+        }
+        public double area(){
+            return area = length*width;
+        }
+    }
+
+    static class Circle{
+        double r;
+        double area;
+        public void getR(double r1){
+            r=r1;
+        }
+        public double area(){
+            return area = (2*3.1415*r);
+        }
+    }
+
+    public static void main(String[] args) {
+        Employee1 krish = new Employee1();
+
+        krish.salary=50000;
+        System.out.println(krish.getSalary());
+        krish.setName("Krishkumar");
+        System.out.println(krish.getName());
+
+        cellphone phone= new cellphone();
+
+        phone.ringing();
+        phone.Vibrate();
+
+        square s = new square();
+
+        s.SetSides(564.64);
+        System.out.println("Area of square is "+s.area());
+
+        TommyVecetti tv = new TommyVecetti();
+
+        tv.hitting();
+        tv.running();
+
+        Rectangle r = new Rectangle();
+
+        r.getSides(253,365);
+        System.out.println("Area of Rectangle is "+r.area());
+
+        Circle c =new Circle();
+        c.getR(456);
+        System.out.println("Area of Circle is "+c.area());
+    }
+}
