@@ -1,0 +1,32 @@
+
+class MyEmployee{
+    private int id;
+    private String name;
+
+    public void setName(String name1) {
+        name = name1;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setId(int id1) {
+        id = id1;
+    }
+
+    public int getId() {
+        return id;
+    }
+}
+
+public class modifies_acces {
+    public static void main(String[] args) {
+        MyEmployee krish = new MyEmployee();
+
+        krish.setId(45);
+        System.out.println(krish.getId());
+        krish.setName("Rohit sharma");
+        System.out.println(krish.getName());
+    }
+}
