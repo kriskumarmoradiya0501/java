@@ -1,1 +1,1 @@
-# java biginner programs.
+# java beginner programs.
