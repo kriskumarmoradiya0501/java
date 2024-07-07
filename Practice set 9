@@ -1,0 +1,98 @@
+package com.company;
+
+import java.util.Scanner;
+
+class Cylinder1{
+
+    private int radius;
+    private int height;
+
+    public int getRadius() {
+        return radius;
+    }
+
+    public void setRadius(int radius) {
+        this.radius = radius;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
+    }
+
+}
+
+class Cylinder2{
+
+    private float radius;
+    private float height;
+    private float pi = 3.1415f;
+    private float area;
+    private float volume;
+    public float getRadius() {
+        return radius;
+    }
+
+    public void setRadius(float radius) {
+        this.radius = radius;
+    }
+
+    public float getHeight() {
+        return height;
+    }
+
+    public void setHeight(float height) {
+        this.height = height;
+    }
+
+    public float area(){
+        area = (2*pi*radius*height)+(2*pi*radius*radius);
+        return area;
+    }
+
+    public float volume(){
+        volume = pi*radius*radius*height;
+        return volume;
+    }
+
+}
+
+
+
+
+
+public class Practice_set_9 {
+    public static void main(String[] args) {
+
+        Scanner s = new Scanner(System.in);
+
+// Q 1 create a class cylinder and use getters and setters to set its radius and heights.
+        Cylinder1 c = new Cylinder1();
+
+        c.setHeight(45);
+        System.out.println(c.getHeight());
+
+        c.setRadius(87);
+        System.out.println(c.getRadius());
+
+//        Q2 use 1 to calculate surface area and volume of cylinder.
+
+        Cylinder2 c2 = new Cylinder2();
+
+        System.out.println("Enter radius : ");
+        float a = s.nextFloat();
+        System.out.println("Enter Height : ");
+        float b = s.nextFloat();
+
+        c2.setRadius(a);
+        c2.setHeight(b);
+
+        System.out.println("Area of cylinder is "+c2.area());
+        System.out.println("Volume of cylinder is "+c2.volume());
+
+
+    }
+}
