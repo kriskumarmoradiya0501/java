@@ -1,0 +1,36 @@
+package com.company;
+
+class Ekclass{
+    int a;
+//    Ekclass(int v){
+//        a=v;
+//    }
+    Ekclass(int a){
+        this.a=a;
+    }
+
+
+    public int getA() {
+        return a;
+    }
+
+    public int returnnone() {
+        return 1;
+    }
+}
+
+class doclass extends Ekclass{
+    doclass(int c){
+        super(c);
+        System.out.println("Mai ak constructor hun");
+    }
+}
+
+public class This_and_super {
+    public static void main(String[] args) {
+        Ekclass e = new Ekclass(10);
+        doclass d = new doclass(5);
+        System.out.println(e.getA());
+
+    }
+}
