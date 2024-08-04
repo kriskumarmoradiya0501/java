@@ -1,0 +1,29 @@
+package com.company;
+
+class Phone{
+    void greet(){
+        System.out.println("Hello How are you?");
+    }
+    void Phone1(){
+        System.out.println("Phone class");
+    }
+}
+
+class Smartphone extends Phone{
+    void name(){
+        System.out.println("Namaste, Kem chho?");
+    }
+    void Phone1(){
+        System.out.println("Smart phone");
+    }
+}
+
+
+public class Dynamic_Methods_Dispatch {
+    public static void main(String[] args) {
+        Phone p = new Smartphone();
+
+        p.greet();
+        p.Phone1();
+    }
+}
