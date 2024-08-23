@@ -1,0 +1,34 @@
+/*
+* create a class and use inheritance to create
+* another class cylinder from it
+* */
+
+class Circle{
+    public float radius;
+    public float PI=3.1415f;
+    Circle(float radius){
+        this.radius=radius;
+    }
+    public float area(){
+        return PI*radius*radius;
+    }
+}
+class Cylinder extends Circle{
+    public float height;
+    Cylinder(float radius,float height){
+        super(radius);
+        this.height=height;
+    }
+    public double volume(){
+        return PI*radius*radius*height;
+    }
+}
+
+public class Practice_set_10 {
+    public static void main(String[] args) {
+
+        Cylinder c = new Cylinder(10.0f,20.22f);
+        System.out.println(c.volume());
+        System.out.println(c.area());
+    }
+}
