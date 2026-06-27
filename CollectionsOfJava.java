@@ -10,11 +10,9 @@ class Student{
         this.age = age;
         this.name = name;
     }
-    
-    public String toString() {
+     public String toString() {
         return age + " " + name;
-    }
-     
+    } 
 }
 
 class CollectionsOfJava{
